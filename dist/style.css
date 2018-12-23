@@ -1,5 +1,7 @@
 body{
-    background-color : #2b85c0;
+    background-color: #20537b;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #header{
@@ -15,9 +17,11 @@ body{
   }
 
   .fa-search{
-      color: white;
-      font-size: 2em;
-      justify-self: end;
+    color: white;
+    font-size: 2em;
+    justify-self: end;
+    align-self: center;
+    margin-right: 5px;
   }
 
 #cityName{
@@ -32,11 +36,14 @@ body{
 .city{
     display: grid;
     grid-template-columns: 10% 50% 40%;
-    box-shadow: 1px 1px 3px;
     color: white;
     font-weight: bold;
     align-items: center;
     height: 20vh;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    background: -webkit-gradient( linear, left top, left bottom, from(#5f9fad80), 
+    color-stop(0.7, #2093ab2e), color-stop(0.92, #0104042e), to(#ececec2e));
 }
 
 .button{
