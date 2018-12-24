@@ -1,7 +1,8 @@
 const renderer = new Renderer()
 const tempManager = new TempManager(renderer)
 
-$( document ).ready(function() {
+$( document ).ready(async function() {
+    await tempManager.getUserId();
     loadPage()
 });
 
