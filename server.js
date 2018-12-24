@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 
 // Mongoose setup
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/weatherDB', { useNewUrlParser: true })
+mongoose.connect(process.env.CONNECTION_STRING||'mongodb://localhost/weatherdb');
 
 
 app.use(express.static(path.join(__dirname, 'dist')))
@@ -17,7 +17,4 @@ app.use(bodyParser.json())
 
 app.use('/', api)
 
-const port = 3000
-app.listen(port, function () {
-    console.log(`Running on port ${port}`)
-})
+app.listen(process.env.PORT || '8080');
