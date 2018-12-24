@@ -6,6 +6,6 @@ class Renderer {
         const source = $('#cities-template').html();
         let template = Handlebars.compile(source);
         let newHTML = template({allCityData});
-        $(".cities-container").append(newHTML);
+        $(".cities-container").append(newHTML)
     }
 }
