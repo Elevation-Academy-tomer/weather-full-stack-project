@@ -63,7 +63,7 @@ router.post('/city/:idUser',async function(req , res){
         .exec(function (err, user) {
             res.send(user.cities)
         })
-})
+}) 
 
 router.delete('/city/:cityName/:idUser', function(req , res){
     let cityName = req.params.cityName
